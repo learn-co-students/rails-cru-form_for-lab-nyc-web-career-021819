@@ -1,0 +1,8 @@
+<h1>Song List</h1>
+<% @songs.each do |s| %>
+<p> <%= link_to s.name, s %></p>
+<% end %>
+
+
+
+<%= link_to '<button type="button">New </button>'.html_safe, new_song_path %>
