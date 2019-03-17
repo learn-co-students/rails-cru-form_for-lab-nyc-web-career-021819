@@ -1,0 +1,7 @@
+<h1>Artists List</h1>
+
+<p><%@artists.each do |a|%></p>
+<p><%= link_to a.name, a%></p>
+<%end%>
+
+<%= link_to '<button type="button">New </button>'.html_safe, new_artist_path %>
